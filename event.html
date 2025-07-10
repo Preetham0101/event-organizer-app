@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Details | Eventify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📋 Event Details</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">All Events</a>
+      <a href="create.html">Create Event</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle">🌓 Theme</button>
+  </header>
+
+  <main class="event-details">
+    <h2 id="event-title">Loading...</h2>
+    <p><strong>Date:</strong> <span id="event-date"></span></p>
+    <p><strong>Location:</strong> <span id="event-location"></span></p>
+    <p><strong>Description:</strong></p>
+    <p id="event-description"></p>
+    <hr />
+    <section class="registration-form">
+      <h3>Register for this event</h3>
+      <form id="register-form">
+        <label>Name:
+          <input type="text" name="name" required />
+        </label>
+        <label>Email:
+          <input type="email" name="email" required />
+        </label>
+        <button type="submit">Register</button>
+      </form>
+      <p id="register-success" style="color: green;"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Eventify. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
